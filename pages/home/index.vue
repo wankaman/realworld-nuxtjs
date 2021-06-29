@@ -96,25 +96,6 @@
         </div>
       </div>
 
-      <!-- 分页列表 -->
-      <nav>
-        <ul class="pagination">
-          <li class="page-item" :class="{active: item === page}" v-for="item in totalPage" :key="item">
-            <nuxt-link class="page-link" :to="{
-              name: 'home',
-              query: {
-                page: item,
-                tag: $route.query.tag,
-                tab,
-              },
-            }">
-              {{item}}
-            </nuxt-link>
-          </li>
-        </ul>
-      </nav>
-      <!-- /分页列表 -->
-
       <!-- 标签列表 -->
       <div class="col-md-3">
         <div class="sidebar">
@@ -133,9 +114,26 @@
           </div>
         </div>
       </div>
-      <!-- /标签列表 -->
-
     </div>
+
+    <!-- 分页列表 -->
+    <nav>
+      <ul class="pagination">
+        <li class="page-item" :class="{active: item === page}" v-for="item in totalPage" :key="item">
+          <nuxt-link class="page-link" :to="{
+            name: 'home',
+            query: {
+              page: item,
+              tag: $route.query.tag,
+              tab,
+            },
+          }">
+            {{item}}
+          </nuxt-link>
+        </li>
+      </ul>
+    </nav>
+
   </div>
 
 </div>

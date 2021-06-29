@@ -17,7 +17,6 @@
                 {{ field }} {{ message }}
               </li>
             </template>
-            
           </ul>
 
           <form @submit.prevent="onSubmit">
