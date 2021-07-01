@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nuxt",
     "start": "nuxt start",
-    "build": "nuxt build && npm start"
+    "build": "nuxt build"
   },
   "keywords": [],
   "author": "",
