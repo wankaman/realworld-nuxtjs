@@ -3,10 +3,6 @@
 */
 
 module.exports = {
-  server: {
-    host: '0.0.0.0',
-    post: 3000,
-  },
   router: {
     linkActiveClass: 'active',
     // 自定义路由表规则
